@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --logo : #49B173;
+  --principal: #1A1A1F;
+  --fundo: #24242A;
+  --texto-principal: #D8DFFF;
+  --texto-secundario: #A9AEC9CC;
+  --menssagem-ok: #1DD5B8;
+  --menssagem-alerta: #FFAF30;
+  --menssagem-perigo: #FF4C4C;
+}
