@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* 
 *{
   box-sizing: border-box;
   margin: 0;
@@ -13,4 +21,26 @@
   --menssagem-ok: #1DD5B8;
   --menssagem-alerta: #FFAF30;
   --menssagem-perigo: #FF4C4C;
+  --bg-dark: #1A1A1F;
+  --bg-soft-dark: #24242A;
+  --text-primary: #D8DFFF;
+  --text-secondary: #A9AEC9;
+  --accent: #1DD5B8;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  /* --bg-dark: #1A1A1F; */
+  --bg-dark: #1A1A1F;
+  --bg-soft-dark: #24242A;
+  --text-primary: #D8DFFF;
+  --text-secondary: #A9AEC9;
+  --accent: #1DD5B8;
+}
+
+body {
+  background-color: var(--bg-soft-dark);
 }
