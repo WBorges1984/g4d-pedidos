@@ -12,7 +12,7 @@ function Login() {
 
 function Logar(){
   console.log(email, senha);
-  navigate('/dashboard')
+  navigate('/Dashboard')
   
 }
 

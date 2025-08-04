@@ -1,0 +1,15 @@
+@import '../../index.css';
+
+.containerDasboard{
+    display: flex;
+    gap: 10px;
+}
+
+.MenuLateral{
+    background-color: var(--fundoDark);
+    height: 100dvh;
+}
+
+.ConteudoDash{
+    background-color: var(--fundoDark);
+}
