@@ -1,15 +1,49 @@
-@import '../../index.css';
+/* dashboard.style.css */
 
-.containerDasboard{
+/* Equivalente a: p-6 bg-gray-50 min-h-screen */
+.dashboard-container {
+  padding: 1.5rem; /* 6 * 0.25rem */
+  background-color: #f9fafb; /* gray-50 */
+  min-height: 100vh;
+}
+
+/* Equivalente a: max-w-4xl mx-auto */
+.dashboard-content {
     display: flex;
-    gap: 10px;
+  max-width: 56rem; /* 4xl */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.MenuLateral{
-    background-color: var(--fundoDark);
-    height: 100dvh;
+/* Equivalente a: text-2xl font-bold text-gray-800 mb-6 */
+.dashboard-title {
+  font-size: 1.5rem; /* 2xl */
+  line-height: 2rem;
+  font-weight: 700; /* bold */
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 1.5rem; /* 6 * 0.25rem */
 }
 
-.ConteudoDash{
-    background-color: var(--fundoDark);
+/* Equivalente a: bg-white p-6 rounded-lg shadow-lg */
+.dashboard-card {
+  background-color: #ffffff; /* white */
+  padding: 1.5rem; /* 6 * 0.25rem */
+  border-radius: 0.5rem; /* lg */
+  /* shadow-lg */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Equivalente a: text-lg font-semibold text-gray-700 mb-4 */
+.card-title {
+  font-size: 1.125rem; /* lg */
+  line-height: 1.75rem;
+  font-weight: 600; /* semibold */
+  color: #374151; /* gray-700 */
+  margin-bottom: 1rem; /* 4 * 0.25rem */
+}
+
+/* Classe de utilidade para a margem do segundo card */
+/* Equivalente a: mt-6 */
+.margin-top-large {
+  margin-top: 1.5rem; /* 6 * 0.25rem */
 }
