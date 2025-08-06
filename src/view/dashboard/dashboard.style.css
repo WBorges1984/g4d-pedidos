@@ -2,13 +2,16 @@
   padding: 10px;
   display: grid;
   grid-template-columns: 2fr 10fr;
-  /* background-color: var(--bg-soft-dark); */
+  background-color: var(--bg-soft-dark); 
 }
 
 .MenuAsider{
   background-color: var(--fundoDark);
-  padding: 10px;
+  /* padding: 10px; */
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 8px;
+  height: 100vi;
 }
 
 .MenuAsider h1{
@@ -18,13 +21,13 @@
   font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
-.conteuconteudoGraficosdoDash{
+.conteudoGraficos{
   display: flex;
-  flex-direction: row;
 }
 
 .vendasDados{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -33,5 +36,14 @@
   padding: 5px;
   border-radius: 8px;
   margin: 10px;
+  max-height:  250px;
+}
 
+.dadosGrafico{
+  height: 200px;
+}
+
+.TitleGrafico{
+  color: var(--texto-principal);
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
 }

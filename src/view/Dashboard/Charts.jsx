@@ -12,11 +12,11 @@ Chart.Chart.register(
 );
 
 export const AnnualSalesChart = ({ 
-  data = [25, 30, 21, 45, 75, 42, 52, 32, 58, 19, 52, 31],
-  labels = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
-  backgroundColor = '#1DD5B8',
-  width = '100%',
-  height = '400px'
+  data = [25, 30, 21, 45, 75, 42],
+  labels = ['Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago',],
+  backgroundColor = '#49B173',
+  width = '300',
+  height = 200
 }) => {
   const canvasRef = useRef(null);
   const chartRef = useRef(null);

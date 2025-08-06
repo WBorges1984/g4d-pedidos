@@ -33,6 +33,7 @@ const SalesValueChart = () => {
     plugins: {
       legend: {
         display: false,
+
       },
     },
     scales: {

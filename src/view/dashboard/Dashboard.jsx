@@ -1,3 +1,4 @@
+import BasicPie from "./BasicPie.jsx";
 import { AnnualSalesChart } from "./Charts";
 import SalesValueChart from "./SalesValueChart";
 import ButtonMenu from "./components/buttonMenu/ButtonMenu";
@@ -22,29 +23,31 @@ function Dashboard() {
 
         
       <div className="conteudoDash">
+          <h2 className="TitleGrafico">Vendas por Mês</h2>
 
         <div className="vendasDados">
-          <CardDados />
-          <CardDados />
-          <CardDados />
-          <CardDados />
+          <CardDados text={'Recebimentos'}/>
+          <CardDados text={'Receb. Em Aberto'}/>
+          <CardDados text={'Pagamentos'}/>
+          <CardDados text={'Pagtos em aberto'}/>
           
         </div>
 
         <div className="conteudoGraficos">
-          <div className="cardDados">
-            <h2 className="">Vendas por Mês</h2>
-            <AnnualSalesChart />
+          <div className="dadosGrafico">
+            <h2 className="TitleGrafico">Vendas por Mês</h2>
+            <div className="cardDados">{/*  */}
+              <AnnualSalesChart />
+            </div>
           </div>
 
-          <div className="cardDados">
-            <h2 className="">Vendas Customizadas</h2>
-            <AnnualSalesChart data={[35, 42, 28, 55, 68, 38, 48, 42, 65, 29, 48, 38]} backgroundColor="#3B82F6" height="300px" />
+          <div className="dadosGrafico">
+            <h2 className="TitleGrafico">Vendas Customizadas</h2>
+            <div className="cardDados">
+            <BasicPie />
+            </div>
           </div>
-          <div className="cardDados">
-            <h2 className="">Vendas Customizadas</h2>
-            <SalesValueChart />
-          </div>
+           
         </div>
       </div>
 
