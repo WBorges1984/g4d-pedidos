@@ -1,41 +1,53 @@
 import { AnnualSalesChart } from "./Charts";
 import SalesValueChart from "./SalesValueChart";
+import ButtonMenu from "./components/buttonMenu/ButtonMenu";
+import CardDados from "./components/cardDados/CardDados";
 // Importe o novo arquivo CSS
-import "./dashboard.style.css"; 
+import "./dashboard.style.css";
+
+import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 
 function Dashboard() {
   return (
-    // Usa a classe .dashboard-container
     <div className="dashboard-container">
-      {/* Usa a classe .dashboard-content */}
-      <div className="dashboard-content">
-        {/* Usa a classe .dashboard-title */}
-        <h1 className="dashboard-title">
-          Gráfico de Vendas Anuais
-        </h1>
+      <div className="MenuAsider" style={{display:'flex', flexDirection:'column', gap: 10, width: '70%'}}>
+        <h1>Dashboard</h1>
         
-        {/* Usa a classe .dashboard-card */}
-        <div className="dashboard-card">
-          {/* Usa a classe .card-title */}
-          <h2 className="card-title">
-            Vendas por Mês
-          </h2>
-          <AnnualSalesChart />
+        <ButtonMenu text={'Dashboard'} iconDash active/>
+        <ButtonMenu text={'Pedidos'} iconPedido/>
+        <ButtonMenu text={'Clientes'} iconCliente/>
+        <ButtonMenu text={'Notificações'} iconNotific/>
+        <ButtonMenu text={'Mais'} iconMais/>
+      </div>
+
+        
+      <div className="conteudoDash">
+
+        <div className="vendasDados">
+          <CardDados />
+          <CardDados />
+          <CardDados />
+          <CardDados />
+          
         </div>
-        
-        {/* Usa as classes .dashboard-card e .margin-top-large */}
-        <div className="dashboard-card margin-top-large">
-          <h2 className="card-title">
-            Vendas Customizadas
-          </h2>
-          <AnnualSalesChart 
-            data={[35, 42, 28, 55, 68, 38, 48, 42, 65, 29, 48, 38]}
-            backgroundColor="#3B82F6"
-            height="300px"
-          />
-          <SalesValueChart />
+
+        <div className="conteudoGraficos">
+          <div className="cardDados">
+            <h2 className="">Vendas por Mês</h2>
+            <AnnualSalesChart />
+          </div>
+
+          <div className="cardDados">
+            <h2 className="">Vendas Customizadas</h2>
+            <AnnualSalesChart data={[35, 42, 28, 55, 68, 38, 48, 42, 65, 29, 48, 38]} backgroundColor="#3B82F6" height="300px" />
+          </div>
+          <div className="cardDados">
+            <h2 className="">Vendas Customizadas</h2>
+            <SalesValueChart />
+          </div>
         </div>
       </div>
+
     </div>
   );
 }

@@ -1,0 +1,25 @@
+
+.cardDadosDashboard{
+  display: flex;
+  align-items: center;
+  background-color: var(--fundoDark);
+width: 100%;
+  border-radius: 8px;
+  justify-content: center;
+  gap: 15px;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+.cardDadosDashboard .dados{
+  color: var(--texto-principal);
+  font-weight: 600;
+}
+
+.cardDadosDashboard .iconVenda{
+  color: var(--principal);
+  background-color: var(--logo);
+  padding: 15px;
+  border-radius: 10px;
+}
