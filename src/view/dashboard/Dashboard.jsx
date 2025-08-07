@@ -1,6 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import BasicPie from "./components/Graficos/BasicPie.jsx"
 import { AnnualSalesChart } from "./components/Graficos/Charts.jsx";
-import SalesValueChart from "./components/Graficos/SalesValueChart.jsx";
 import ButtonMenu from "./components/buttonMenu/ButtonMenu";
 import CardDados from "./components/cardDados/CardDados";
 import TabelaPedido from "./components/tabelaPedido/TabelaPedido.jsx";
@@ -10,6 +10,13 @@ import "./dashboard.style.css";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 
 function Dashboard() {
+const navigate = useNavigate();
+  
+
+function AbrirPagina(link){
+alert('oi')
+  }
+
   return (
     <div className="dashboard-container">
       <div
@@ -24,7 +31,7 @@ function Dashboard() {
         <h1>Dashboard</h1>
 
         <ButtonMenu text={"Dashboard"} iconDash active />
-        <ButtonMenu text={"Pedidos"} iconPedido />
+        <ButtonMenu text={"Pedidos"} iconPedido  onclick={AbrirPagina}/>
         <ButtonMenu text={"Clientes"} iconCliente />
         <ButtonMenu text={"Notificações"} iconNotific />
         <ButtonMenu text={"Mais"} iconMais />

@@ -9,9 +9,9 @@ import NotificationsSharpIcon from '@mui/icons-material/NotificationsSharp';
 import MoreHorizSharpIcon from '@mui/icons-material/MoreHorizSharp';
 
 
-function ButtonMenu({text, iconDash, iconPedido, iconCliente, iconNotific, iconMais, active  }) {
+function ButtonMenu({onclick, text, iconDash, iconPedido, iconCliente, iconNotific, iconMais, active  }) {
   return (
-    <Button color='info' size='medium' variant={active ? "contained" : "outlined"}>
+    <Button onClick={onclick} color='info' size='medium' variant={active ? "contained" : "outlined"}>
       {iconDash ? <DashboardSharpIcon /> : 
         iconPedido ?  <ListAltSharpIcon /> :
         iconCliente ? <PeopleSharpIcon /> :
