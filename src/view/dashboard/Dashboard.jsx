@@ -14,7 +14,7 @@ const navigate = useNavigate();
   
 
 function AbrirPagina(link){
-alert('oi')
+navigate('/pedidos')
   }
 
   return (
