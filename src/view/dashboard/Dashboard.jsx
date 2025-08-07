@@ -1,42 +1,50 @@
-import BasicPie from "./BasicPie.jsx";
-import { AnnualSalesChart } from "./Charts";
-import SalesValueChart from "./SalesValueChart";
+import BasicPie from "./components/Graficos/BasicPie.jsx"
+import { AnnualSalesChart } from "./components/Graficos/Charts.jsx";
+import SalesValueChart from "./components/Graficos/SalesValueChart.jsx";
 import ButtonMenu from "./components/buttonMenu/ButtonMenu";
 import CardDados from "./components/cardDados/CardDados";
+import TabelaPedido from "./components/tabelaPedido/TabelaPedido.jsx";
 // Importe o novo arquivo CSS
 import "./dashboard.style.css";
 
-import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
+import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
-      <div className="MenuAsider" style={{display:'flex', flexDirection:'column', gap: 10, width: '70%'}}>
+      <div
+        className="MenuAsider"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 10,
+          width: "70%",
+        }}
+      >
         <h1>Dashboard</h1>
-        
-        <ButtonMenu text={'Dashboard'} iconDash active/>
-        <ButtonMenu text={'Pedidos'} iconPedido/>
-        <ButtonMenu text={'Clientes'} iconCliente/>
-        <ButtonMenu text={'Notificações'} iconNotific/>
-        <ButtonMenu text={'Mais'} iconMais/>
+
+        <ButtonMenu text={"Dashboard"} iconDash active />
+        <ButtonMenu text={"Pedidos"} iconPedido />
+        <ButtonMenu text={"Clientes"} iconCliente />
+        <ButtonMenu text={"Notificações"} iconNotific />
+        <ButtonMenu text={"Mais"} iconMais />
       </div>
 
-        
       <div className="conteudoDash">
-          <h2 className="TitleGrafico">Vendas por Mês</h2>
+        <h2 className="TitleGrafico">Vendas por Mês</h2>
 
         <div className="vendasDados">
-          <CardDados text={'Recebimentos'}/>
-          <CardDados text={'Receb. Em Aberto'}/>
-          <CardDados text={'Pagamentos'}/>
-          <CardDados text={'Pagtos em aberto'}/>
-          
+          <CardDados text={"Recebimentos"} />
+          <CardDados text={"Receb. Em Aberto"} />
+          <CardDados text={"Pagamentos"} />
+          <CardDados text={"Pagtos em aberto"} />
         </div>
 
         <div className="conteudoGraficos">
           <div className="dadosGrafico">
             <h2 className="TitleGrafico">Vendas por Mês</h2>
-            <div className="cardDados">{/*  */}
+            <div className="cardDados">
+              {/*  */}
               <AnnualSalesChart />
             </div>
           </div>
@@ -44,13 +52,19 @@ function Dashboard() {
           <div className="dadosGrafico">
             <h2 className="TitleGrafico">Vendas Customizadas</h2>
             <div className="cardDados">
-            <BasicPie />
+              <BasicPie />
             </div>
           </div>
-           
         </div>
+          
+            
+          <div className="tabelaPedido">
+            <div className="">
+              <TabelaPedido />
+            </div>
+          </div>
+         
       </div>
-
     </div>
   );
 }
