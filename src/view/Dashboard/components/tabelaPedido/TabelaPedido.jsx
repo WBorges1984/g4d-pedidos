@@ -35,11 +35,11 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('#12456', 'Elay Borges', 650.08, 'Entregue',  '07/08/2025'),
-  createData('#12456', 'Danilo Borges', 958.19, 'Pendente', '05/08/2025'),
-  createData('#12456', 'Willian Borges', 166.06, 'Cancelado', '01/08/2025'),
-  createData('#12456', 'Matcia Helena', 325.78, 'Pendente', '25/07/2025'),
-  createData('#12456', 'Debora Borges', 161.09, 'Entregue', '06/08/2025'),
+  createData('12456', 'Elay Borges', 650.08, 'Entregue',  '07/08/2025'),
+  createData('12457', 'Danilo Borges', 958.19, 'Pendente', '05/08/2025'),
+  createData('12458', 'Willian Borges', 166.06, 'Cancelado', '01/08/2025'),
+  createData('12459', 'Matcia Helena', 325.78, 'Pendente', '25/07/2025'),
+  createData('12460', 'Debora Borges', 161.09, 'Entregue', '06/08/2025'),
 ];
 
 export default function TabelaPedido() {

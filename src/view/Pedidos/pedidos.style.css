@@ -1,0 +1,39 @@
+.container-pedidos{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  background-color: var(--bg-soft-dark); 
+}
+
+.conteudoGraficos{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vendasDados{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cardDados{
+  background-color: var(--fundoDark);
+  padding: 5px;
+  border-radius: 8px;
+  margin: 10px;
+  max-height:  250px;
+}
+
+.dadosGrafico{
+  height: 200px;
+  width: 100%;
+}
+
+.TitleGrafico{
+  color: var(--texto-principal);
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+.tabelaPedido{
+  margin-top: 100px;
+}

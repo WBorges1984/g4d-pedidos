@@ -6,6 +6,7 @@ Chart.Chart.register(
   Chart.CategoryScale,
   Chart.LinearScale,
   Chart.BarElement,
+  Chart.BarController,  // <- Esta é a linha que estava faltando!
   Chart.Title,
   Chart.Tooltip,
   Chart.Legend
@@ -13,7 +14,7 @@ Chart.Chart.register(
 
 export const AnnualSalesChart = ({ 
   data = [25, 30, 21, 45, 75, 42],
-  labels = ['Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago',],
+  labels = ['Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago'],
   backgroundColor = '#49B173',
   width = '300',
   height = 200

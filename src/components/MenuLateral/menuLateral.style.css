@@ -1,0 +1,15 @@
+.MenuAsider{
+  background-color: var(--fundoDark);
+  /* padding: 10px; */
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 8px;
+  height: 100vi;
+}
+
+.MenuAsider h1{
+  color: var(--texto-principal);
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
