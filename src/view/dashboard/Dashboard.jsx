@@ -15,10 +15,10 @@ function Dashboard() {
     <div className="dashboard-container">
     <MenuLateral titulo={'Dashboard'}/>
 
-      <div className="conteudoDash">
+       <div className="conteudoDash">
         <h2 className="TitleGrafico">Vendas por Mês</h2>
 
-        <div className="vendasDados">
+        <div className="vendasDadosDash">
           <CardDados text={"Recebimentos"} />
           <CardDados text={"Receb. Em Aberto"} />
           <CardDados text={"Pagamentos"} />
@@ -29,7 +29,6 @@ function Dashboard() {
           <div className="dadosGrafico">
             <h2 className="TitleGrafico">Vendas por Mês</h2>
             <div className="cardDados">
-              {/*  */}
               <AnnualSalesChart />
             </div>
           </div>
@@ -44,12 +43,10 @@ function Dashboard() {
           
             
           <div className="tabelaPedido">
-            <div className="">
               <TabelaPedido />
-            </div>
           </div>
          
-      </div>
+      </div> 
     </div>
   );
 }

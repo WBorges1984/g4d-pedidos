@@ -10,10 +10,9 @@
   justify-content: space-evenly;
 }
 
-.vendasDados{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.vendasDadosDash{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cardDados{
@@ -21,12 +20,11 @@
   padding: 5px;
   border-radius: 8px;
   margin: 10px;
-  max-height:  250px;
 }
 
 .dadosGrafico{
   height: 200px;
-  width: 100%;
+
 }
 
 .TitleGrafico{
@@ -36,4 +34,7 @@
 
 .tabelaPedido{
   margin-top: 100px;
+  min-width: max-content;
+  margin-left: 10px;
+  margin-right: 10px;
 }

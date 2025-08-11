@@ -1,9 +1,10 @@
 
 .cardDadosDashboard{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   background-color: var(--fundoDark);
-  max-width: 350px;
   border-radius: 8px;
   justify-content: center;
   gap: 15px;
