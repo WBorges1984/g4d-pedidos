@@ -1,0 +1,17 @@
+.custom-button {
+  background-color: var(--logo);
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button h3 {
+  color: var(--texto-principal);
+  font-family: "Roboto", "Courier New", Courier, monospace;
+}

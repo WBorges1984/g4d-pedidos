@@ -1,39 +1,35 @@
-.container-pedidos{
+.container-pedidos {
   padding: 10px;
   display: grid;
   grid-template-columns: 2fr 10fr;
-  background-color: var(--bg-soft-dark); 
+  background-color: var(--bg-soft-dark);
 }
 
-.conteudoGraficos{
+.conteudoGraficos {
   display: flex;
   justify-content: space-evenly;
 }
 
-.vendasDados{
+.vendasDados {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.cardDados{
+.cardDados {
   background-color: var(--fundoDark);
   padding: 5px;
   border-radius: 8px;
   margin: 10px;
-  max-height:  250px;
+  max-height: 250px;
 }
 
-.dadosGrafico{
-  height: 200px;
-  width: 100%;
-}
-
-.TitleGrafico{
+.TitlePedidos {
   color: var(--texto-principal);
-  font-family: 'Roboto', 'Courier New', Courier, monospace;
+  font-family: "Roboto", "Courier New", Courier, monospace;
 }
 
-.tabelaPedido{
-  margin-top: 100px;
+.topPedidos{
+  display: flex;
+  justify-content: space-between;
 }
