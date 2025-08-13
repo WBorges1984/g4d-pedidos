@@ -1,21 +1,22 @@
 import ButtonMenu from '../../view/Dashboard/components/buttonMenu/ButtonMenu'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 import './menuLateral.style.css'
-import { useState } from 'react';
 
 function MenuLateral({titulo}) {
-  const[activeDash, SetactiveDash] = useState(true);
-  const[activePedido, SetactivePedido] = useState('');
-  
-    const navigate = useNavigate();
-  
-const AbrirPagina = (link) => {
-  {link === 'dashboard' ? SetactiveDash(true) : ''}
 
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  const AbrirPagina = (link) => {
     navigate(`/${link}`);
   };
 
+  // Função para verificar se o botão está ativo baseado na URL atual
+  const isActive = (path) => {
+    const currentPath = location.pathname.replace('/', '');
+    return currentPath === path || (currentPath === '' && path === 'dashboard');
+  };
 
   return (
     <div
@@ -28,12 +29,36 @@ const AbrirPagina = (link) => {
         }}
       >
         <h1>{titulo}</h1>
-        {activeDash && <ButtonMenu text={"Dashboard"} iconDash active onclick={()=>AbrirPagina('dashboard')}/>}
-        {!activeDash && <ButtonMenu text={"Dashboard"} iconDash  onclick={()=>AbrirPagina('dashboard')}/>}
-        <ButtonMenu text={"Pedidos"} iconPedido  onclick={()=>AbrirPagina('pedidos')}/>
-        <ButtonMenu text={"Clientes"} iconCliente onclick={()=>AbrirPagina('clientes')}/>
-        <ButtonMenu text={"Notificações"} iconNotific onclick={()=>AbrirPagina('notific')}/>
-        <ButtonMenu text={"Mais"} iconMais onclick={()=>AbrirPagina('mais')}/>
+        <ButtonMenu 
+          text={"Dashboard"} 
+          iconDash 
+          active={isActive('dashboard')} 
+          onclick={()=>AbrirPagina('dashboard')}
+        />
+        <ButtonMenu 
+          text={"Pedidos"} 
+          iconPedido 
+          active={isActive('pedidos')} 
+          onclick={()=>AbrirPagina('pedidos')}
+        />
+        <ButtonMenu 
+          text={"Clientes"} 
+          iconCliente 
+          active={isActive('clientes')} 
+          onclick={()=>AbrirPagina('clientes')}
+        />
+        <ButtonMenu 
+          text={"Notificações"} 
+          iconNotific 
+          active={isActive('notific')} 
+          onclick={()=>AbrirPagina('notific')}
+        />
+        <ButtonMenu 
+          text={"Mais"} 
+          iconMais 
+          active={isActive('mais')} 
+          onclick={()=>AbrirPagina('mais')}
+        />
       </div>
   )
 }

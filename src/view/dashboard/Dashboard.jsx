@@ -5,7 +5,6 @@ import TabelaPedido from "./components/tabelaPedido/TabelaPedido.jsx";
 // Importe o novo arquivo CSS
 import "./dashboard.style.css";
 
-import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 import MenuLateral from "../../components/MenuLateral/MenuLateral.jsx";
 
 function Dashboard() {
