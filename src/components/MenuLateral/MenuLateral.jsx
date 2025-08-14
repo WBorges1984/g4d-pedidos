@@ -1,4 +1,4 @@
-import ButtonMenu from '../../view/Dashboard/components/buttonMenu/ButtonMenu'
+import ButtonMenu from '../Pages/Dashboard/components/buttonMenu/ButtonMenu.jsx'
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import './menuLateral.style.css'
@@ -28,6 +28,7 @@ function MenuLateral({titulo}) {
           width: "70%",
         }}
       >
+        
         <h1>{titulo}</h1>
         <ButtonMenu 
           text={"Dashboard"} 

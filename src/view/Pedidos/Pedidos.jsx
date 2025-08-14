@@ -1,8 +1,8 @@
 import MenuLateral from "../../components/MenuLateral/MenuLateral";
 
 import "./pedidos.style.css";
-import CustomButtom from "../../components/CustomButtom/CustomButtom";
-import TotalPedidos from "./Graficos/TotalPedidos";
+import CustomButtom from "../../components/CustomButtom/CustomButtom.jsx";
+import TotalPedidos from "../../components/Pages/Pedidos/Graficos/TotalPedidos.jsx";
 
 function Pedidos() {
   return (

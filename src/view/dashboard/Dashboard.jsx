@@ -1,7 +1,7 @@
-import BasicPie from "./components/Graficos/BasicPie.jsx"
-import { AnnualSalesChart } from "./components/Graficos/Charts.jsx";
-import CardDados from "./components/cardDados/CardDados";
-import TabelaPedido from "./components/tabelaPedido/TabelaPedido.jsx";
+import BasicPie from "../../components/Pages/Dashboard/components/Graficos/BasicPie.jsx"
+import { AnnualSalesChart } from "../../components/Pages/Dashboard/components/Graficos/Charts.jsx";
+import CardDados from "../../components/Pages/Dashboard/components/cardDados/CardDados";
+import TabelaPedido from "../../components/Pages/Dashboard/components/tabelaPedido/TabelaPedido.jsx";
 // Importe o novo arquivo CSS
 import "./dashboard.style.css";
 
