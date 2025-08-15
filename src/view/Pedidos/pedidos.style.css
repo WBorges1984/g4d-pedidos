@@ -29,22 +29,6 @@
   font-family: "Roboto", "Courier New", Courier, monospace;
 }
 
-.TotalPedidos h4, h3{
-  color: var(--texto-principal);
-  font-family: "Roboto", "Courier New", Courier, monospace;
-  
-}
-
-.TotalPedidos{
-  background-color: var(--fundoDark);
-  width: max-content;
-  display: inline-flex;
-  flex-direction: column;
-  padding: 15px;
-  border-radius: 10px;
-  
-}
-
 .topPedidos{
   display: flex;
   justify-content: space-between;
@@ -57,12 +41,11 @@
   border-radius: 10px;
 }
 
-.GraficosPedidos{
+.DadosPedidos{
   display: flex;
-  flex-direction: row; 
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 15px;
+}
+
+.TotalPedidos{
+  width: 100%;
 }

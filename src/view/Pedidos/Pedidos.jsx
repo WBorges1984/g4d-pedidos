@@ -2,7 +2,9 @@ import MenuLateral from "../../components/MenuLateral/MenuLateral";
 
 import "./pedidos.style.css";
 import CustomButtom from "../../components/CustomButtom/CustomButtom.jsx";
-import TotalPedidos from "../../components/Pages/Pedidos/Graficos/TotalPedidos.jsx";
+import TotalPedidos from "../../components/Pages/Pedidos/DadosPedidos/TotalPedidos.jsx";
+import CardDadosPedidos from "../../components/Pages/Pedidos/DadosPedidos/TotalPedidos.jsx";
+import TabelaPedidos from "../../components/Pages/Pedidos/TabelaPedidos/TabelaPedidos.jsx";
 
 function Pedidos() {
   return (
@@ -19,22 +21,20 @@ function Pedidos() {
           <input className="" placeholder="Pesquisar pedidos..." type="text"/>
           <CustomButtom texto={'Buscar'}/>
         </div>
-        <div className="GraficosPedidos">
+        <div className="DadosPedidos">
           <div className="TotalPedidos">
-            <h4>Total Pedidos</h4>
-            <h3>1.365</h3>
-            <TotalPedidos />
+            <CardDadosPedidos text={'Total Pedidos'} ValorNum={'1.365'}/>
           </div>
           <div className="TotalPedidos">
-            <h4>Receita Total</h4>
-            <h3>1.365</h3>
-            <TotalPedidos />
+            <CardDadosPedidos text={'Receita Total'} ValorNum={'15.253,20'}/>
           </div>
           <div className="TotalPedidos">
-            <h4>Pedidos Pendentes</h4>
-            <h3>1.365</h3>
-            <TotalPedidos />
+            <CardDadosPedidos text={'Pedidos Pendentes'} ValorNum={'250'}/>
           </div>
+        </div>
+
+        <div className="pedidosShow">
+          <TabelaPedidos />
         </div>
 
       </div>
