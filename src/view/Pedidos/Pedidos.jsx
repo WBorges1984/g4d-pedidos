@@ -2,9 +2,10 @@ import MenuLateral from "../../components/MenuLateral/MenuLateral";
 
 import "./pedidos.style.css";
 import CustomButtom from "../../components/CustomButtom/CustomButtom.jsx";
-import TotalPedidos from "../../components/Pages/Pedidos/DadosPedidos/TotalPedidos.jsx";
-import CardDadosPedidos from "../../components/Pages/Pedidos/DadosPedidos/TotalPedidos.jsx";
-import TabelaPedidos from "../../components/Pages/Pedidos/TabelaPedidos/TabelaPedidos.jsx";
+import CardTotalPedidos from "../../components/Pages/Pedidos/DadosPedidos/CardTotalPedidos/TotalPedidos.jsx";
+import {TabelaPedidos} from "../../components/Pages/Pedidos/TabelaPedidos/TabelaPedidos.jsx";
+import CardReceitaTotal from "../../components/Pages/Pedidos/DadosPedidos/CardReceitaTotal/CardReceitaTotal.jsx";
+import CardPedidosPendentes from "../../components/Pages/Pedidos/DadosPedidos/CardPedidosPendentes/CardPedidosPendentes.jsx";
 
 function Pedidos() {
   return (
@@ -23,13 +24,13 @@ function Pedidos() {
         </div>
         <div className="DadosPedidos">
           <div className="TotalPedidos">
-            <CardDadosPedidos text={'Total Pedidos'} ValorNum={'1.365'}/>
+            <CardTotalPedidos text={'Total Pedidos'} ValorNum={'1.365'}/>
           </div>
           <div className="TotalPedidos">
-            <CardDadosPedidos text={'Receita Total'} ValorNum={'15.253,20'}/>
+            <CardReceitaTotal text={'Receita Total'} ValorNum={'15.253,20'}/>
           </div>
           <div className="TotalPedidos">
-            <CardDadosPedidos text={'Pedidos Pendentes'} ValorNum={'250'}/>
+            <CardPedidosPendentes text={'Pedidos Pendentes'} ValorNum={'250'}/>
           </div>
         </div>
 

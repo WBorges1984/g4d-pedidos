@@ -1,0 +1,36 @@
+.tablePedido{
+    width: 100%;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    border-collapse: separate;
+    border-spacing: 0;
+
+}
+
+
+.trTheadPedido{
+    background-color: var(--fundo);
+    color: var(--texto-principal);
+    text-align: left;
+}
+
+th{
+    padding: 20px;
+    color: var(--texto-principal);
+    border-bottom: 1px solid gray;
+}
+
+.trTheadPedido th{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.trPedido td{
+    font-size: large;
+}
+td{
+    background-color: var(--fundoDark);
+    padding: 20px;
+    color: var(--texto-principal);
+    border-bottom: 1px solid gray;
+
+}

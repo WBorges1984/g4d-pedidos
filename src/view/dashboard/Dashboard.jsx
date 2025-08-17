@@ -42,6 +42,7 @@ function Dashboard() {
           
             
           <div className="tabelaPedido">
+            <h2 className="TitleGrafico">Último pedidos</h2>
               <TabelaPedido />
           </div>
          

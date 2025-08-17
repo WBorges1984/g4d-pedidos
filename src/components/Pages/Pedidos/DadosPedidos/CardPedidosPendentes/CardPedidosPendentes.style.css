@@ -1,0 +1,5 @@
+.cardDadosPedidos{
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -48,11 +48,11 @@ export default function TabelaPedido() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>ID do Pedido</StyledTableCell>
-            <StyledTableCell align="right">Cliente</StyledTableCell>
-            <StyledTableCell align="right">Valor</StyledTableCell>
-            <StyledTableCell align="right">Status</StyledTableCell>
-            <StyledTableCell align="right">Data</StyledTableCell>
+            <StyledTableCell sx={{ width: '10%' }}>ID do Pedido</StyledTableCell>
+            <StyledTableCell sx={{ width: '40%' }}>Cliente</StyledTableCell>
+            <StyledTableCell sx={{ width: '20%' }}>Valor</StyledTableCell>
+            <StyledTableCell sx={{ width: '15%' }}>Status</StyledTableCell>
+            <StyledTableCell sx={{ width: '15%' }}>Data</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -61,10 +61,10 @@ export default function TabelaPedido() {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+              <StyledTableCell>{row.calories}</StyledTableCell>
+              <StyledTableCell>{row.fat}</StyledTableCell>
+              <StyledTableCell>{row.carbs}</StyledTableCell>
+              <StyledTableCell>{row.protein}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
