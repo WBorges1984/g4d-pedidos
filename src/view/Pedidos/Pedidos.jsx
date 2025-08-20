@@ -16,11 +16,11 @@ function Pedidos() {
       <div className="conteudoPedidos">
         <div className="topPedidos">
           <h2 className="TitlePedidos">Análise de Pedidos</h2>
-          <CustomButtom texto={'+ Pedido'}/>
+          <CustomButtom texto={'+ Pedido'} />
         </div>
         <div className="pesquisaPedidos">
           <input className="" placeholder="Pesquisar pedidos..." type="text"/>
-          <CustomButtom texto={'Buscar'}/>
+          <CustomButtom texto={'Buscar'} color={'#046ebeff'} />
         </div>
         <div className="DadosPedidos">
           <div className="TotalPedidos">
