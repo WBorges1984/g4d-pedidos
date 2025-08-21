@@ -18,10 +18,10 @@ function Dashboard() {
         <h2 className="TitleGrafico">Vendas por Mês</h2>
 
         <div className="vendasDadosDash">
-          <CardDados text={"Recebimentos"} />
-          <CardDados text={"Receb. Em Aberto"} />
-          <CardDados text={"Pagamentos"} />
-          <CardDados text={"Pagtos em aberto"} />
+          <CardDados text={"Recebimentos"} icon={'recebimentos'} />
+          <CardDados text={"Receb. Em Aberto"} icon={'recebimentos_em_aberto'} />
+          <CardDados text={"Pagamentos"} icon={'pagamentos'} />
+          <CardDados text={"Pagtos em aberto"} icon={'pagamentos_em_aberto'} />
         </div>
 
         <div className="conteudoGraficos">
